@@ -1,0 +1,16 @@
+[
+  {
+    "id": "fhir.Cancer",
+    "type": "ImplementationGuide",
+    "url": "http://example.org/ImplementationGuide/fhir.Cancer",
+    "version": "0.1.0",
+    "name": "CancerIG"
+  },
+  {
+    "id": "example-patient-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/example-patient-profile",
+    "version": "0.1.0",
+    "name": "ExamplePatientProfile"
+  }
+]

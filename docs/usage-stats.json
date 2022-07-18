@@ -4,10 +4,22 @@
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
+    "Condition": [
+      {
+        "url": "http://example.org/StructureDefinition/Condition-profile",
+        "title": "03-Condition Profile(CISISTAG)"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://example.org/StructureDefinition/Observation-profile",
+        "title": "02-Observation Profile(CISISTAG)"
+      }
+    ],
     "Patient": [
       {
-        "url": "http://example.org/StructureDefinition/example-patient-profile",
-        "title": "Example Patient Profile"
+        "url": "http://example.org/StructureDefinition/patient-profile",
+        "title": "01-Patient Profile"
       }
     ]
   },
@@ -27,8 +39,14 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
@@ -41,6 +59,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"

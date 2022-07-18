@@ -7,10 +7,24 @@
     "name": "CancerIG"
   },
   {
-    "id": "example-patient-profile",
+    "id": "Condition-profile",
     "type": "StructureDefinition",
-    "url": "http://example.org/StructureDefinition/example-patient-profile",
+    "url": "http://example.org/StructureDefinition/Condition-profile",
     "version": "0.1.0",
-    "name": "ExamplePatientProfile"
+    "name": "ConditionProfile"
+  },
+  {
+    "id": "Observation-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/Observation-profile",
+    "version": "0.1.0",
+    "name": "ObservationProfile"
+  },
+  {
+    "id": "patient-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/patient-profile",
+    "version": "0.1.0",
+    "name": "PatientProfile"
   }
 ]

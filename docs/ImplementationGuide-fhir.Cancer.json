@@ -8,8 +8,9 @@
   "url": "http://example.org/ImplementationGuide/fhir.Cancer",
   "version": "0.1.0",
   "name": "CancerIG",
+  "title": "台北榮民總醫院-治療計畫書實作指引(VGH-IG)",
   "status": "draft",
-  "date": "2022-06-19T22:39:51+08:00",
+  "date": "2022-07-18T21:33:06+08:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -333,9 +334,37 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/example-patient-profile"
+          "reference": "StructureDefinition/Condition-profile"
         },
-        "name": "Example Patient Profile",
+        "name": "03-Condition Profile(CISISTAG)",
+        "description": "Example of a profile of Condition",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Observation-profile"
+        },
+        "name": "02-Observation Profile(CISISTAG)",
+        "description": "Example of a profile of Observation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/patient-profile"
+        },
+        "name": "01-Patient Profile",
         "description": "Example of a profile of Patient",
         "exampleBoolean": false
       }

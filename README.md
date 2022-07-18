@@ -1,4 +1,4 @@
-* Build Project
+## Build Project
 ./_genonce.sh 
-* publish to doc folder
-cp -r output  doc
+## publish to doc folder
+cp -r output  docs

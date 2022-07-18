@@ -1,10 +1,10 @@
 // @Name: Profile
 // @Description: Example of a profile of the Patient resource. This example includes a few of the most commonly used constraints and documentation features of FHIR profiles.
 
-Profile:     ExamplePatientProfile
-Id:          example-patient-profile
+Profile:     PatientProfile
+Id:          patient-profile
 Parent:      Patient
-Title:       "Example Patient Profile"
+Title:       "01-Patient Profile"
 Description: "Example of a profile of Patient"
 // The `Title` keyword defines the human-readable title on the profile's page in the built
 // Implementation Guide. This is also visible in on the Artifacts page and in the Table of Contents

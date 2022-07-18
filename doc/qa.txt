@@ -1,0 +1,20 @@
+﻿CancerIG : Validation Results
+=========================================
+
+err = 0, warn = 3, info = 0
+IG Publisher Version: 1.1.121 Out of date - current version is 1.1.125
+Generated Mon Jul 18 21:33:33 CST 2022. FHIR version 4.0.1 for fhir.Cancer#0.1.0 (canonical = http://example.org)
+ Build Errors : 0 / 0 / 0
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/ImplementationGuide-fhir.Cancer : 0 / 0 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Condition-profile : 0 / 1 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Observation-profile : 0 / 1 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-patient-profile : 0 / 1 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/ImplementationGuide-fhir.Cancer.json ==
+== fsh-generated/resources/StructureDefinition-Condition-profile.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/Condition-profile'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Observation-profile.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/Observation-profile'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-patient-profile.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/patient-profile'): The Implementation Guide contains no examples for this profile

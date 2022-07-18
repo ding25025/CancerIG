@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fhir.Cancer",
+    "type": "ImplementationGuide",
+    "url": "http://example.org/ImplementationGuide/fhir.Cancer",
+    "version": "0.1.0",
+    "name": "CancerIG"
+  },
+  {
+    "id": "Condition-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/Condition-profile",
+    "version": "0.1.0",
+    "name": "ConditionProfile"
+  },
+  {
+    "id": "Observation-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/Observation-profile",
+    "version": "0.1.0",
+    "name": "ObservationProfile"
+  },
+  {
+    "id": "patient-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/patient-profile",
+    "version": "0.1.0",
+    "name": "PatientProfile"
+  }
+]

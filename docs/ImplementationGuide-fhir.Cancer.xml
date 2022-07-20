@@ -10,7 +10,7 @@
   <name value="CancerIG"/>
   <title value="台北榮民總醫院-治療計畫書實作指引(VGH-IG)"/>
   <status value="draft"/>
-  <date value="2022-07-18T21:33:06+08:00"/>
+  <date value="2022-07-20T22:00:32+08:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -213,6 +213,36 @@
       </reference>
       <name value="03-Condition Profile(CISISTAG)"/>
       <description value="Example of a profile of Condition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MITW-Medication"/>
+      </reference>
+      <name value="MITW-Medication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MTIW-MedicationAdministration"/>
+      </reference>
+      <name value="MITW-MedicationAdministration"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MITW-MedicationRequest"/>
+      </reference>
+      <name value="MITW-MedicationRequest"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

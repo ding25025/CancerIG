@@ -21,6 +21,24 @@
         "url": "http://example.org/StructureDefinition/patient-profile",
         "title": "01-Patient Profile"
       }
+    ],
+    "Medication": [
+      {
+        "url": "https://example.org/fhir/StructureDefinition/MITW-Medication",
+        "title": "MITW-Medication"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "https://example.org/fhir/StructureDefinition/MITW-MedicationAdministration",
+        "title": "MITW-MedicationAdministration"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "https://example.org/fhir/StructureDefinition/MedicationRequest",
+        "title": "MITW-MedicationRequest"
+      }
     ]
   },
   "usage": {

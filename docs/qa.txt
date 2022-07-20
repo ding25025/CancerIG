@@ -1,19 +1,35 @@
 ﻿CancerIG : Validation Results
 =========================================
 
-err = 0, warn = 3, info = 0
+err = 1, warn = 12, info = 0
 IG Publisher Version: 1.1.121 Out of date - current version is 1.1.125
-Generated Mon Jul 18 21:33:33 CST 2022. FHIR version 4.0.1 for fhir.Cancer#0.1.0 (canonical = http://example.org)
- Build Errors : 0 / 0 / 0
+Generated Wed Jul 20 22:01:17 CST 2022. FHIR version 4.0.1 for fhir.Cancer#0.1.0 (canonical = http://example.org)
+ Build Errors : 0 / 3 / 0
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/ImplementationGuide-fhir.Cancer : 0 / 0 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Condition-profile : 0 / 1 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-MITW-Medication : 0 / 2 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-MITW-MedicationRequest : 1 / 2 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-MTIW-MedicationAdministration : 0 / 2 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Observation-profile : 0 / 1 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-patient-profile : 0 / 1 / 1
 </table>
 == n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MITW-Medication.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MTIW-MedicationAdministration.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MITW-MedicationRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 == fsh-generated/resources/ImplementationGuide-fhir.Cancer.json ==
 == fsh-generated/resources/StructureDefinition-Condition-profile.json ==
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/Condition-profile'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MITW-Medication.json ==
+WARNING: StructureDefinition/MITW-Medication: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MITW-Medication'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MITW-MedicationRequest.json ==
+WARNING: StructureDefinition/MITW-MedicationRequest: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: StructureDefinition/MITW-MedicationRequest: StructureDefinition.differential.element[1].code[0].system: URL value 'http://hl7.org/fhir/sid/icd9' does not resolve
+WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MedicationRequest'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MTIW-MedicationAdministration.json ==
+WARNING: StructureDefinition/MTIW-MedicationAdministration: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MITW-MedicationAdministration'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-Observation-profile.json ==
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/Observation-profile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-patient-profile.json ==

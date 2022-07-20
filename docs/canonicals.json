@@ -26,5 +26,26 @@
     "url": "http://example.org/StructureDefinition/patient-profile",
     "version": "0.1.0",
     "name": "PatientProfile"
+  },
+  {
+    "id": "MITW-Medication",
+    "type": "StructureDefinition",
+    "url": "https://example.org/fhir/StructureDefinition/MITW-Medication",
+    "version": "0.1.0",
+    "name": "MITW-Medication"
+  },
+  {
+    "id": "MTIW-MedicationAdministration",
+    "type": "StructureDefinition",
+    "url": "https://example.org/fhir/StructureDefinition/MITW-MedicationAdministration",
+    "version": "0.1.0",
+    "name": "MITW-MedicationAdministration"
+  },
+  {
+    "id": "MITW-MedicationRequest",
+    "type": "StructureDefinition",
+    "url": "https://example.org/fhir/StructureDefinition/MedicationRequest",
+    "version": "0.1.0",
+    "name": "MITW-MedicationRequest"
   }
 ]

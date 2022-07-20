@@ -10,7 +10,7 @@
   "name": "CancerIG",
   "title": "台北榮民總醫院-治療計畫書實作指引(VGH-IG)",
   "status": "draft",
-  "date": "2022-07-18T21:33:06+08:00",
+  "date": "2022-07-20T22:00:32+08:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -338,6 +338,45 @@
         },
         "name": "03-Condition Profile(CISISTAG)",
         "description": "Example of a profile of Condition",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MITW-Medication"
+        },
+        "name": "MITW-Medication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MTIW-MedicationAdministration"
+        },
+        "name": "MITW-MedicationAdministration",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MITW-MedicationRequest"
+        },
+        "name": "MITW-MedicationRequest",
         "exampleBoolean": false
       },
       {

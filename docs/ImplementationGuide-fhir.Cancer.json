@@ -10,7 +10,7 @@
   "name": "CancerIG",
   "title": "台北榮民總醫院-治療計畫書實作指引(VGH-IG)",
   "status": "draft",
-  "date": "2022-07-20T22:00:32+08:00",
+  "date": "2022-07-31T21:33:26+08:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -336,6 +336,20 @@
         "reference": {
           "reference": "StructureDefinition/Condition-profile"
         },
+        "name": "05-Condition Profile(CISCTCAE)",
+        "description": "Example of a profile of Condition",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Condition-profile-Example"
+        },
         "name": "03-Condition Profile(CISISTAG)",
         "description": "Example of a profile of Condition",
         "exampleBoolean": false
@@ -348,9 +362,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MITW-Medication"
+          "reference": "StructureDefinition/Medication"
         },
         "name": "MITW-Medication",
+        "description": "Example of a profile of Medication",
         "exampleBoolean": false
       },
       {
@@ -361,9 +376,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MTIW-MedicationAdministration"
+          "reference": "StructureDefinition/MedicationAdministration"
         },
         "name": "MITW-MedicationAdministration",
+        "description": "Example of a profile of MedicationAdministration",
         "exampleBoolean": false
       },
       {
@@ -374,9 +390,24 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MITW-MedicationRequest"
+          "reference": "StructureDefinition/MedicationRequest"
         },
         "name": "MITW-MedicationRequest",
+        "description": "Example of a profile of MedicationRequest",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MyObservation"
+        },
+        "name": "04-Observation-CISSSF",
+        "description": "Example of a profile of Observation",
         "exampleBoolean": false
       },
       {

@@ -1,8 +1,11 @@
 Alias: $MedicationRequest = http://hl7.org/fhir/StructureDefinition/MedicationRequest
 
-Profile: MITW-MedicationRequest
+Profile: MedicationRequest
 Parent: $MedicationRequest
-Id: MITW-MedicationRequest
+Id: MedicationRequest
+Title:       "MITW-MedicationRequest"
+Description: "Example of a profile of MedicationRequest"
+
 * ^url = "https://example.org/fhir/StructureDefinition/MedicationRequest"
 * ^status = #draft
 * identifier.type.coding ^code.system = "http://hl7.org/fhir/sid/icd9"

@@ -1,5 +1,5 @@
-Profile:     ConditionProfile
-Id:          Condition-profile
+Profile:     ConditionProfileExample
+Id:          Condition-profile-Example
 Parent:      Condition
 Title:       "03-Condition Profile(CISISTAG)"
 Description: "Example of a profile of Condition"
@@ -29,7 +29,7 @@ Description: "Example of a profile of Condition"
 * bodySite 0..*
 * bodySite.coding 1..
 * bodySite.coding.system 1..
-* bodySite.coding.system = "VGH" (exactly)
+* bodySite.coding.system = "https://www.vghtpe.gov.tw/Index.action" (exactly)
 * bodySite.coding.code 1..
 * bodySite.coding.display 1..
 * onset[x] 1..

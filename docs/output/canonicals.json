@@ -1,0 +1,65 @@
+[
+  {
+    "id": "fhir.Cancer",
+    "type": "ImplementationGuide",
+    "url": "http://example.org/ImplementationGuide/fhir.Cancer",
+    "version": "0.1.0",
+    "name": "CancerIG"
+  },
+  {
+    "id": "Condition-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/Condition-profile",
+    "version": "0.1.0",
+    "name": "ConditionProfile"
+  },
+  {
+    "id": "Condition-profile-Example",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/Condition-profile-Example",
+    "version": "0.1.0",
+    "name": "ConditionProfileExample"
+  },
+  {
+    "id": "patient-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/patient-profile",
+    "version": "0.1.0",
+    "name": "PatientProfile"
+  },
+  {
+    "id": "Medication",
+    "type": "StructureDefinition",
+    "url": "https://example.org/fhir/StructureDefinition/MITW-Medication",
+    "version": "0.1.0",
+    "name": "Medication"
+  },
+  {
+    "id": "MedicationAdministration",
+    "type": "StructureDefinition",
+    "url": "https://example.org/fhir/StructureDefinition/MITW-MedicationAdministration",
+    "version": "0.1.0",
+    "name": "MedicationAdministration"
+  },
+  {
+    "id": "MedicationRequest",
+    "type": "StructureDefinition",
+    "url": "https://example.org/fhir/StructureDefinition/MedicationRequest",
+    "version": "0.1.0",
+    "name": "MedicationRequest"
+  },
+  {
+    "id": "MyObservation",
+    "type": "StructureDefinition",
+    "url": "https://example.org/fhir/StructureDefinition/MyObservation",
+    "version": "0.1.0",
+    "name": "MyObservation"
+  },
+  {
+    "id": "Observation-profile",
+    "type": "StructureDefinition",
+    "url": "https://example.org/fhir/StructureDefinition/MyObservation",
+    "version": "0.1.0",
+    "name": "ObservationProfile"
+  }
+]

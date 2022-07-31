@@ -1,0 +1,36 @@
+﻿CancerIG : Validation Results
+=========================================
+
+err = 1, warn = 8, info = 0
+IG Publisher Version: 1.1.121 Out of date - current version is 1.1.127
+Generated Sun Jul 31 21:34:22 CST 2022. FHIR version 4.0.1 for fhir.Cancer#0.1.0 (canonical = http://example.org)
+ Build Errors : 0 / 0 / 0
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/ImplementationGuide-fhir.Cancer : 0 / 0 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Condition-profile : 0 / 1 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Condition-profile-Example : 0 / 1 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Medication : 0 / 1 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-MedicationAdministration : 0 / 1 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-MedicationRequest : 1 / 1 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-MyObservation : 0 / 1 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Observation-profile : 0 / 1 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-patient-profile : 0 / 1 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/ImplementationGuide-fhir.Cancer.json ==
+== fsh-generated/resources/StructureDefinition-Condition-profile.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/Condition-profile'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Condition-profile-Example.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/Condition-profile-Example'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Medication.json ==
+WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MITW-Medication'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MedicationAdministration.json ==
+WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MITW-MedicationAdministration'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MedicationRequest.json ==
+ERROR: StructureDefinition/MedicationRequest: StructureDefinition.differential.element[1].code[0].system: URL value 'http://hl7.org/fhir/sid/icd9' does not resolve
+WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MedicationRequest'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MyObservation.json ==
+WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MyObservation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Observation-profile.json ==
+WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MyObservation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-patient-profile.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/patient-profile'): The Implementation Guide contains no examples for this profile

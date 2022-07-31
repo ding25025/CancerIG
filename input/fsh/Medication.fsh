@@ -1,6 +1,11 @@
-Profile: MITW-Medication
-Parent: Medication
-Id: MITW-Medication
+Alias: $Medication = http://hl7.org/fhir/StructureDefinition/Medication
+
+Profile: Medication
+Parent: $Medication
+Id: Medication
+Title:       "MITW-Medication"
+Description: "Example of a profile of Medication"
+
 * ^url = "https://example.org/fhir/StructureDefinition/MITW-Medication"
 * ^status = #draft
 * code 1..

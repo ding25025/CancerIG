@@ -10,7 +10,7 @@
   <name value="CancerIG"/>
   <title value="台北榮民總醫院-治療計畫書實作指引(VGH-IG)"/>
   <status value="draft"/>
-  <date value="2022-07-20T22:00:32+08:00"/>
+  <date value="2022-07-31T21:33:26+08:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -211,6 +211,17 @@
       <reference>
         <reference value="StructureDefinition/Condition-profile"/>
       </reference>
+      <name value="05-Condition Profile(CISCTCAE)"/>
+      <description value="Example of a profile of Condition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Condition-profile-Example"/>
+      </reference>
       <name value="03-Condition Profile(CISISTAG)"/>
       <description value="Example of a profile of Condition"/>
       <exampleBoolean value="false"/>
@@ -220,9 +231,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/MITW-Medication"/>
+        <reference value="StructureDefinition/Medication"/>
       </reference>
       <name value="MITW-Medication"/>
+      <description value="Example of a profile of Medication"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -230,9 +242,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/MTIW-MedicationAdministration"/>
+        <reference value="StructureDefinition/MedicationAdministration"/>
       </reference>
       <name value="MITW-MedicationAdministration"/>
+      <description value="Example of a profile of MedicationAdministration"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -240,9 +253,21 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/MITW-MedicationRequest"/>
+        <reference value="StructureDefinition/MedicationRequest"/>
       </reference>
       <name value="MITW-MedicationRequest"/>
+      <description value="Example of a profile of MedicationRequest"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MyObservation"/>
+      </reference>
+      <name value="04-Observation-CISSSF"/>
+      <description value="Example of a profile of Observation"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

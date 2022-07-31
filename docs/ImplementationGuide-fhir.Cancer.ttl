@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CancerIG"];
   fhir:ImplementationGuide.title [ fhir:value "台北榮民總醫院-治療計畫書實作指引(VGH-IG)"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-07-20T22:00:32+08:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-07-31T21:33:26+08:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Example Publisher"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -321,7 +321,7 @@
          fhir:link <http://example.org/StructureDefinition/Condition-profile>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Condition-profile" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "03-Condition Profile(CISISTAG)" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "05-Condition Profile(CISCTCAE)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Condition" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -332,10 +332,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/StructureDefinition/MITW-Medication>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/MITW-Medication" ]
+         fhir:link <http://example.org/StructureDefinition/Condition-profile-Example>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Condition-profile-Example" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MITW-Medication" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "03-Condition Profile(CISISTAG)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Condition" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
@@ -345,10 +346,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/StructureDefinition/MTIW-MedicationAdministration>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/MTIW-MedicationAdministration" ]
+         fhir:link <http://example.org/StructureDefinition/Medication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Medication" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MITW-MedicationAdministration" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MITW-Medication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Medication" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
@@ -358,13 +360,42 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/StructureDefinition/MITW-MedicationRequest>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/MITW-MedicationRequest" ]
+         fhir:link <http://example.org/StructureDefinition/MedicationAdministration>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationAdministration" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MITW-MedicationRequest" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MITW-MedicationAdministration" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of MedicationAdministration" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/StructureDefinition/MedicationRequest>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MITW-MedicationRequest" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of MedicationRequest" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/StructureDefinition/MyObservation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MyObservation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "04-Observation-CISSSF" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -378,7 +409,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Observation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

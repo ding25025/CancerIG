@@ -4,7 +4,7 @@
 Profile:     PatientProfile
 Id:          patient-profile
 Parent:      Patient
-Title:       "01-Patient Profile"
+Title:       "Patient Profile"
 Description: "Example of a profile of Patient"
 // The `Title` keyword defines the human-readable title on the profile's page in the built
 // Implementation Guide. This is also visible in on the Artifacts page and in the Table of Contents
@@ -47,3 +47,21 @@ Description: "Example of a profile of Patient"
 
 // Restrict `something[x]` to a specific type -- in this case only allowing dateTime to be used
 * deceased[x] only dateTime
+
+
+Instance: PatientExample
+InstanceOf: PatientProfile
+
+* name.family = "Anyperson"
+* name.given[0] = "John"
+* name.given[1] = "B."
+// The first element [0] can also be represented as [+] if it is not preceded by any hard index
+* contact.telecom[+].system = #phone
+* contact.telecom[=].value = "555-555-5555"
+* contact.telecom[=].use = #home
+* contact.telecom[+].system = #email
+* contact.telecom[=].value = "john.anyperson@example.com"
+
+* gender = #male
+
+* birthDate = "1951-01-20"

@@ -1,8 +1,8 @@
 Profile:     ObservationProfile
 Id:          Observation-profile
 Parent:      Observation
-Title:       "02-Observation Profile(CISISTAG)"
-Description: "Example of a profile of Observation"
+Title:       "Observation Profile(CISISTAG)"
+Description: "Example of a profile of Observation(CISISTAG)"
 
 // ----- Begin rules:
 

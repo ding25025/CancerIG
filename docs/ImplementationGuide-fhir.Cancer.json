@@ -10,7 +10,7 @@
   "name": "CancerIG",
   "title": "台北榮民總醫院-治療計畫書實作指引(VGH-IG)",
   "status": "draft",
-  "date": "2022-07-31T21:33:26+08:00",
+  "date": "2022-08-03T14:01:00+08:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -334,10 +334,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/Condition-profile"
+          "reference": "StructureDefinition/Condition-profile-Example"
         },
-        "name": "05-Condition Profile(CISCTCAE)",
-        "description": "Example of a profile of Condition",
+        "name": "Condition Profile(CISISTAG)",
+        "description": "Example of a profile of Condition(CISISTAG)",
         "exampleBoolean": false
       },
       {
@@ -348,10 +348,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/Condition-profile-Example"
+          "reference": "StructureDefinition/Condition-profile"
         },
-        "name": "03-Condition Profile(CISISTAG)",
-        "description": "Example of a profile of Condition",
+        "name": "Condition Profile(CISCTCAE)",
+        "description": "Example of a profile of Condition(CISCTCAE)",
         "exampleBoolean": false
       },
       {
@@ -406,8 +406,8 @@
         "reference": {
           "reference": "StructureDefinition/MyObservation"
         },
-        "name": "04-Observation-CISSSF",
-        "description": "Example of a profile of Observation",
+        "name": "Observation(CISSSF)",
+        "description": "Example of a profile of Observation(CISSSF)",
         "exampleBoolean": false
       },
       {
@@ -420,8 +420,8 @@
         "reference": {
           "reference": "StructureDefinition/Observation-profile"
         },
-        "name": "02-Observation Profile(CISISTAG)",
-        "description": "Example of a profile of Observation",
+        "name": "Observation Profile(CISISTAG)",
+        "description": "Example of a profile of Observation(CISISTAG)",
         "exampleBoolean": false
       },
       {
@@ -434,9 +434,35 @@
         "reference": {
           "reference": "StructureDefinition/patient-profile"
         },
-        "name": "01-Patient Profile",
+        "name": "Patient Profile",
         "description": "Example of a profile of Patient",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/CISISTAGExample"
+        },
+        "name": "CISISTAGExample",
+        "exampleCanonical": "http://example.org/StructureDefinition/Condition-profile-Example"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/PatientExample"
+        },
+        "name": "PatientExample",
+        "exampleCanonical": "http://example.org/StructureDefinition/patient-profile"
       }
     ],
     "page": {

@@ -22,9 +22,9 @@
   <url value="http://example.org/StructureDefinition/patient-profile"/>
   <version value="0.1.0"/>
   <name value="PatientProfile"/>
-  <title value="01-Patient Profile"/>
+  <title value="Patient Profile"/>
   <status value="active"/>
-  <date value="2022-07-31T21:33:26+08:00"/>
+  <date value="2022-08-03T14:01:00+08:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>

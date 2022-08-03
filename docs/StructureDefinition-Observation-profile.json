@@ -18,9 +18,9 @@
   "url": "https://example.org/fhir/StructureDefinition/MyObservation",
   "version": "0.1.0",
   "name": "ObservationProfile",
-  "title": "02-Observation Profile(CISISTAG)",
+  "title": "Observation Profile(CISISTAG)",
   "status": "draft",
-  "date": "2022-07-31T21:33:26+08:00",
+  "date": "2022-08-03T14:01:00+08:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -33,7 +33,7 @@
       ]
     }
   ],
-  "description": "Example of a profile of Observation",
+  "description": "Example of a profile of Observation(CISISTAG)",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

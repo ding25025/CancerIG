@@ -1,8 +1,8 @@
 Profile: MyObservation
 Parent: Observation
 Id: MyObservation
-Title:       "04-Observation-CISSSF"
-Description: "Example of a profile of Observation"
+Title:       "Observation(CISSSF)"
+Description: "Example of a profile of Observation(CISSSF)"
 
 * ^url = "https://example.org/fhir/StructureDefinition/MyObservation"
 * ^status = #draft

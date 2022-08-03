@@ -24,9 +24,9 @@
   fhir:StructureDefinition.url [ fhir:value "https://example.org/fhir/StructureDefinition/MyObservation"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "MyObservation"];
-  fhir:StructureDefinition.title [ fhir:value "04-Observation-CISSSF"];
+  fhir:StructureDefinition.title [ fhir:value "Observation(CISSSF)"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-31T21:33:26+08:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-03T14:01:00+08:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Example Publisher"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -37,7 +37,7 @@
        fhir:ContactPoint.value [ fhir:value "http://example.org/example-publisher" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Example of a profile of Observation"];
+  fhir:StructureDefinition.description [ fhir:value "Example of a profile of Observation(CISSSF)"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

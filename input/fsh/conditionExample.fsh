@@ -1,8 +1,8 @@
 Profile:     ConditionProfile
 Id:          Condition-profile
 Parent:      Condition
-Title:       "05-Condition Profile(CISCTCAE)"
-Description: "Example of a profile of Condition"
+Title:       "Condition Profile(CISCTCAE)"
+Description: "Example of a profile of Condition(CISCTCAE)"
 
 // ----- Begin rules:
 * ^status = #draft

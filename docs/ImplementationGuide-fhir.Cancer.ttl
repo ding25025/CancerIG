@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CancerIG"];
   fhir:ImplementationGuide.title [ fhir:value "台北榮民總醫院-治療計畫書實作指引(VGH-IG)"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-07-31T21:33:26+08:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-08-03T14:01:00+08:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Example Publisher"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -318,11 +318,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/StructureDefinition/Condition-profile>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Condition-profile" ]
+         fhir:link <http://example.org/StructureDefinition/Condition-profile-Example>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Condition-profile-Example" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "05-Condition Profile(CISCTCAE)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Condition" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition Profile(CISISTAG)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Condition(CISISTAG)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -332,11 +332,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/StructureDefinition/Condition-profile-Example>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Condition-profile-Example" ]
+         fhir:link <http://example.org/StructureDefinition/Condition-profile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Condition-profile" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "03-Condition Profile(CISISTAG)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Condition" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition Profile(CISCTCAE)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Condition(CISCTCAE)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
@@ -391,8 +391,8 @@
          fhir:link <http://example.org/StructureDefinition/MyObservation>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/MyObservation" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "04-Observation-CISSSF" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Observation" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation(CISSSF)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Observation(CISSSF)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 6;
@@ -405,8 +405,8 @@
          fhir:link <http://example.org/StructureDefinition/Observation-profile>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Observation-profile" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "02-Observation Profile(CISISTAG)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Observation" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation Profile(CISISTAG)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Observation(CISISTAG)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 7;
@@ -419,9 +419,41 @@
          fhir:link <http://example.org/StructureDefinition/patient-profile>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/patient-profile" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "01-Patient Profile" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Profile" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/Condition/CISISTAGExample>;
+         fhir:Reference.reference [ fhir:value "Condition/CISISTAGExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CISISTAGExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/StructureDefinition/Condition-profile-Example";
+         fhir:link <http://example.org/StructureDefinition/Condition-profile-Example>
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/Patient/PatientExample>;
+         fhir:Reference.reference [ fhir:value "Patient/PatientExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PatientExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/StructureDefinition/patient-profile";
+         fhir:link <http://example.org/StructureDefinition/patient-profile>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

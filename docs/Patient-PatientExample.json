@@ -1,0 +1,39 @@
+{
+  "resourceType": "Patient",
+  "id": "PatientExample",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/patient-profile"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>John B. Anyperson </b> male, DoB: 1951-01-20</p></div>"
+  },
+  "name": [
+    {
+      "family": "Anyperson",
+      "given": [
+        "John",
+        "B."
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1951-01-20",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "555-555-5555",
+          "use": "home"
+        },
+        {
+          "system": "email",
+          "value": "john.anyperson@example.com"
+        }
+      ]
+    }
+  ]
+}

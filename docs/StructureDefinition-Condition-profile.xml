@@ -46,9 +46,9 @@
   <url value="http://example.org/StructureDefinition/Condition-profile"/>
   <version value="0.1.0"/>
   <name value="ConditionProfile"/>
-  <title value="05-Condition Profile(CISCTCAE)"/>
+  <title value="Condition Profile(CISCTCAE)"/>
   <status value="draft"/>
-  <date value="2022-07-31T21:33:26+08:00"/>
+  <date value="2022-08-03T14:01:00+08:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -57,7 +57,7 @@
       <value value="http://example.org/example-publisher"/>
     </telecom>
   </contact>
-  <description value="Example of a profile of Condition"/>
+  <description value="Example of a profile of Condition(CISCTCAE)"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>

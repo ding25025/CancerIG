@@ -10,7 +10,7 @@
   <name value="CancerIG"/>
   <title value="台北榮民總醫院-治療計畫書實作指引(VGH-IG)"/>
   <status value="draft"/>
-  <date value="2022-07-31T21:33:26+08:00"/>
+  <date value="2022-08-03T14:01:00+08:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -209,10 +209,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Condition-profile"/>
+        <reference value="StructureDefinition/Condition-profile-Example"/>
       </reference>
-      <name value="05-Condition Profile(CISCTCAE)"/>
-      <description value="Example of a profile of Condition"/>
+      <name value="Condition Profile(CISISTAG)"/>
+      <description value="Example of a profile of Condition(CISISTAG)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -220,10 +220,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Condition-profile-Example"/>
+        <reference value="StructureDefinition/Condition-profile"/>
       </reference>
-      <name value="03-Condition Profile(CISISTAG)"/>
-      <description value="Example of a profile of Condition"/>
+      <name value="Condition Profile(CISCTCAE)"/>
+      <description value="Example of a profile of Condition(CISCTCAE)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -266,8 +266,8 @@
       <reference>
         <reference value="StructureDefinition/MyObservation"/>
       </reference>
-      <name value="04-Observation-CISSSF"/>
-      <description value="Example of a profile of Observation"/>
+      <name value="Observation(CISSSF)"/>
+      <description value="Example of a profile of Observation(CISSSF)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -277,8 +277,8 @@
       <reference>
         <reference value="StructureDefinition/Observation-profile"/>
       </reference>
-      <name value="02-Observation Profile(CISISTAG)"/>
-      <description value="Example of a profile of Observation"/>
+      <name value="Observation Profile(CISISTAG)"/>
+      <description value="Example of a profile of Observation(CISISTAG)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -288,9 +288,29 @@
       <reference>
         <reference value="StructureDefinition/patient-profile"/>
       </reference>
-      <name value="01-Patient Profile"/>
+      <name value="Patient Profile"/>
       <description value="Example of a profile of Patient"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/CISISTAGExample"/>
+      </reference>
+      <name value="CISISTAGExample"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/Condition-profile-Example"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PatientExample"/>
+      </reference>
+      <name value="PatientExample"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/patient-profile"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

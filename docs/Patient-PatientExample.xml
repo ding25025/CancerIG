@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PatientExample"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/patient-profile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>John B. Anyperson </b> male, DoB: 1951-01-20</p></div>
+  </text>
+  <name>
+    <family value="Anyperson"/>
+    <given value="John"/>
+    <given value="B."/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1951-01-20"/>
+  <contact>
+    <telecom>
+      <system value="phone"/>
+      <value value="555-555-5555"/>
+      <use value="home"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="john.anyperson@example.com"/>
+    </telecom>
+  </contact>
+</Patient>

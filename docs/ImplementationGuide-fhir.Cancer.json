@@ -10,7 +10,7 @@
   "name": "CancerIG",
   "title": "台北榮民總醫院-治療計畫書實作指引(VGH-IG)",
   "status": "draft",
-  "date": "2022-08-03T14:01:00+08:00",
+  "date": "2022-08-07T11:52:30+08:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -364,7 +364,7 @@
         "reference": {
           "reference": "StructureDefinition/Medication"
         },
-        "name": "MITW-Medication",
+        "name": "Medication-MITW",
         "description": "Example of a profile of Medication",
         "exampleBoolean": false
       },
@@ -378,7 +378,7 @@
         "reference": {
           "reference": "StructureDefinition/MedicationAdministration"
         },
-        "name": "MITW-MedicationAdministration",
+        "name": "MedicationAdministration-MITW",
         "description": "Example of a profile of MedicationAdministration",
         "exampleBoolean": false
       },
@@ -392,7 +392,7 @@
         "reference": {
           "reference": "StructureDefinition/MedicationRequest"
         },
-        "name": "MITW-MedicationRequest",
+        "name": "MedicationRequest-MITW",
         "description": "Example of a profile of MedicationRequest",
         "exampleBoolean": false
       },

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CancerIG"];
   fhir:ImplementationGuide.title [ fhir:value "台北榮民總醫院-治療計畫書實作指引(VGH-IG)"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-08-03T14:01:00+08:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-08-07T11:52:30+08:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Example Publisher"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -349,7 +349,7 @@
          fhir:link <http://example.org/StructureDefinition/Medication>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Medication" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MITW-Medication" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication-MITW" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Medication" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -363,7 +363,7 @@
          fhir:link <http://example.org/StructureDefinition/MedicationAdministration>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationAdministration" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MITW-MedicationAdministration" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedicationAdministration-MITW" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of MedicationAdministration" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -377,7 +377,7 @@
          fhir:link <http://example.org/StructureDefinition/MedicationRequest>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationRequest" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MITW-MedicationRequest" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedicationRequest-MITW" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of MedicationRequest" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [

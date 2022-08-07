@@ -3,7 +3,7 @@ Alias: $MedicationAdministration = http://hl7.org/fhir/StructureDefinition/Medic
 Profile: MedicationAdministration
 Parent: $MedicationAdministration
 Id: MedicationAdministration
-Title:       "MITW-MedicationAdministration"
+Title:       "MedicationAdministration-MITW"
 Description: "Example of a profile of MedicationAdministration"
 
 * ^url = "https://example.org/fhir/StructureDefinition/MITW-MedicationAdministration"

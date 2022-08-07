@@ -18,9 +18,9 @@
   "url": "https://example.org/fhir/StructureDefinition/MITW-MedicationAdministration",
   "version": "0.1.0",
   "name": "MedicationAdministration",
-  "title": "MITW-MedicationAdministration",
+  "title": "MedicationAdministration-MITW",
   "status": "draft",
-  "date": "2022-08-03T14:01:00+08:00",
+  "date": "2022-08-07T11:52:30+08:00",
   "publisher": "Example Publisher",
   "contact": [
     {

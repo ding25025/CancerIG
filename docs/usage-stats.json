@@ -23,19 +23,19 @@
     "Medication": [
       {
         "url": "https://example.org/fhir/StructureDefinition/MITW-Medication",
-        "title": "MITW-Medication"
+        "title": "Medication-MITW"
       }
     ],
     "MedicationAdministration": [
       {
         "url": "https://example.org/fhir/StructureDefinition/MITW-MedicationAdministration",
-        "title": "MITW-MedicationAdministration"
+        "title": "MedicationAdministration-MITW"
       }
     ],
     "MedicationRequest": [
       {
         "url": "https://example.org/fhir/StructureDefinition/MedicationRequest",
-        "title": "MITW-MedicationRequest"
+        "title": "MedicationRequest-MITW"
       }
     ],
     "Observation": [

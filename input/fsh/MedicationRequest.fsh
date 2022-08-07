@@ -3,7 +3,7 @@ Alias: $MedicationRequest = http://hl7.org/fhir/StructureDefinition/MedicationRe
 Profile: MedicationRequest
 Parent: $MedicationRequest
 Id: MedicationRequest
-Title:       "MITW-MedicationRequest"
+Title:       "MedicationRequest-MITW"
 Description: "Example of a profile of MedicationRequest"
 
 * ^url = "https://example.org/fhir/StructureDefinition/MedicationRequest"
@@ -15,6 +15,10 @@ Description: "Example of a profile of MedicationRequest"
 * category.coding.system = "http://terminology.hl7.org/CodeSystem/medicationrequest-category" (exactly)
 * category.coding.code 1..
 * category.coding.display 1..
+
+* medicationCodeableConcept.coding.system 1..
+* medicationCodeableConcept.coding.code 1..
+* medicationCodeableConcept.coding.display 1..
 * authoredOn 1..
 * dosageInstruction 1..
 * dosageInstruction.sequence 1..

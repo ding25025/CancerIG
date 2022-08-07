@@ -10,7 +10,7 @@
   <name value="CancerIG"/>
   <title value="台北榮民總醫院-治療計畫書實作指引(VGH-IG)"/>
   <status value="draft"/>
-  <date value="2022-08-03T14:01:00+08:00"/>
+  <date value="2022-08-07T11:52:30+08:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -233,7 +233,7 @@
       <reference>
         <reference value="StructureDefinition/Medication"/>
       </reference>
-      <name value="MITW-Medication"/>
+      <name value="Medication-MITW"/>
       <description value="Example of a profile of Medication"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -244,7 +244,7 @@
       <reference>
         <reference value="StructureDefinition/MedicationAdministration"/>
       </reference>
-      <name value="MITW-MedicationAdministration"/>
+      <name value="MedicationAdministration-MITW"/>
       <description value="Example of a profile of MedicationAdministration"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -255,7 +255,7 @@
       <reference>
         <reference value="StructureDefinition/MedicationRequest"/>
       </reference>
-      <name value="MITW-MedicationRequest"/>
+      <name value="MedicationRequest-MITW"/>
       <description value="Example of a profile of MedicationRequest"/>
       <exampleBoolean value="false"/>
     </resource>

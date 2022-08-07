@@ -21,9 +21,9 @@
   <url value="https://example.org/fhir/StructureDefinition/MITW-Medication"/>
   <version value="0.1.0"/>
   <name value="Medication"/>
-  <title value="MITW-Medication"/>
+  <title value="Medication-MITW"/>
   <status value="draft"/>
-  <date value="2022-08-03T14:01:00+08:00"/>
+  <date value="2022-08-07T11:52:30+08:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>

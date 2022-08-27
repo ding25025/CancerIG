@@ -3,7 +3,7 @@
 
 err = 4, warn = 11, info = 4
 IG Publisher Version: 1.1.121 Out of date - current version is 1.1.128
-Generated Sat Aug 27 12:18:17 CST 2022. FHIR version 4.0.1 for fhir.Cancer#0.1.0 (canonical = http://example.org)
+Generated Sat Aug 27 19:57:59 CST 2022. FHIR version 4.0.1 for fhir.Cancer#0.1.0 (canonical = http://example.org)
  Build Errors : 4 / 1 / 0
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/ImplementationGuide-fhir.Cancer : 0 / 0 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/condition-CISISTAG-profile-Example : 3 / 2 / 4

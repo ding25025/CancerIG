@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "ConditionProfile"];
   fhir:StructureDefinition.title [ fhir:value "Condition Profile(CISCTCAE)"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-27T12:17:33+08:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-27T19:57:01+08:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Example Publisher"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Condition/CISISTAG-profile-Example> a fhir:Condition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CISISTAG-profile-Example"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://example.org/StructureDefinition/CISISTAG-profile-Example";
+       fhir:index 0;
+       fhir:link <http://example.org/StructureDefinition/CISISTAG-profile-Example>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"CISISTAG-profile-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CISISTAG-profile-Example.html\">Condition Profile(CISISTAG)</a></p></div><p><b>identifier</b>: id: STAGSER (OFFICIAL), id: CASESER (USUAL)</p><p><b>code</b>: PBICD9 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#154.1; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#C20.9 \"PBICD3T\")</span></p><p><b>bodySite</b>: COLON,SPLEEN <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (Index.action#100010)</span></p><p><b>subject</b>: <a href=\"Patient\">Patient</a> \"Patient\"</p><p><b>recordedDate</b>: 2013-01-31</p><p><b>recorder</b>: <a href=\"Practitioner\">Practitioner</a> \"Practitioner\"</p><h3>Stages</h3><table class=\"grid\"><tr><td>-</td><td><b>Summary</b></td><td><b>Assessment</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>CLCALT <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (Index.action#2)</span></td><td><a href=\"Observation\">Observation</a> \"Observation\"</td><td>Stage group.clinical Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#21908-9)</span></td></tr></table></div>"
+  ];
+  fhir:Condition.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.value [ fhir:value "STAGSER" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "usual" ];
+     fhir:Identifier.value [ fhir:value "CASESER" ]
+  ];
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:154.1;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "154.1" ];
+       fhir:Coding.display [ fhir:value "PBICD9" ]
+     ], [
+       fhir:index 1;
+       a sct:C20.9;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "C20.9" ];
+       fhir:Coding.display [ fhir:value "PBICD3T" ]
+     ]
+  ];
+  fhir:Condition.bodySite [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.vghtpe.gov.tw/Index.action" ];
+       fhir:Coding.code [ fhir:value "100010" ];
+       fhir:Coding.display [ fhir:value "COLON,SPLEEN" ]
+     ]
+  ];
+  fhir:Condition.subject [
+     fhir:Reference.reference [ fhir:value "Patient" ]
+  ];
+  fhir:Condition.recordedDate [ fhir:value "2013-01-31"^^xsd:date];
+  fhir:Condition.recorder [
+     fhir:Reference.reference [ fhir:value "Practitioner" ]
+  ];
+  fhir:Condition.stage [
+     fhir:index 0;
+     fhir:Condition.stage.summary [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.vghtpe.gov.tw/Index.action" ];
+         fhir:Coding.code [ fhir:value "2" ];
+         fhir:Coding.display [ fhir:value "CLCALT" ]
+       ]
+     ];
+     fhir:Condition.stage.assessment [
+       fhir:index 0;
+       fhir:Reference.reference [ fhir:value "Observation" ]
+     ];
+     fhir:Condition.stage.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://loinc.org/" ];
+         fhir:Coding.code [ fhir:value "21908-9" ];
+         fhir:Coding.display [ fhir:value "Stage group.clinical Cancer" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/Condition/CISISTAG-profile-Example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

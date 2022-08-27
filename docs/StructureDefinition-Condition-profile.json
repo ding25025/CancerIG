@@ -20,7 +20,7 @@
   "name": "ConditionProfile",
   "title": "Condition Profile(CISCTCAE)",
   "status": "draft",
-  "date": "2022-08-07T11:52:30+08:00",
+  "date": "2022-08-27T12:17:33+08:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -33,7 +33,7 @@
       ]
     }
   ],
-  "description": "Example of a profile of Condition(CISCTCAE)",
+  "description": "Example of a profile of Condition(CISCTCAE)副作用併發症記錄表",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

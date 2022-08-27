@@ -36,7 +36,7 @@
   <name value="ObservationProfile"/>
   <title value="Observation Profile(CISISTAG)"/>
   <status value="draft"/>
-  <date value="2022-08-07T11:52:30+08:00"/>
+  <date value="2022-08-27T12:17:33+08:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -45,7 +45,7 @@
       <value value="http://example.org/example-publisher"/>
     </telecom>
   </contact>
-  <description value="Example of a profile of Observation(CISISTAG)"/>
+  <description value="Example of a profile of Observation(CISISTAG)癌病病患原始期別"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>

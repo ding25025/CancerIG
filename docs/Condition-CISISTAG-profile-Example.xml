@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="CISISTAG-profile-Example"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/CISISTAG-profile-Example"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "CISISTAG-profile-Example" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-CISISTAG-profile-Example.html">Condition Profile(CISISTAG)</a></p></div><p><b>identifier</b>: id: STAGSER (OFFICIAL), id: CASESER (USUAL)</p><p><b>code</b>: PBICD9 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#154.1; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#C20.9 "PBICD3T")</span></p><p><b>bodySite</b>: COLON,SPLEEN <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (Index.action#100010)</span></p><p><b>subject</b>: <a href="Patient">Patient</a> "Patient"</p><p><b>recordedDate</b>: 2013-01-31</p><p><b>recorder</b>: <a href="Practitioner">Practitioner</a> "Practitioner"</p><h3>Stages</h3><table class="grid"><tr><td>-</td><td><b>Summary</b></td><td><b>Assessment</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>CLCALT <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (Index.action#2)</span></td><td><a href="Observation">Observation</a> "Observation"</td><td>Stage group.clinical Cancer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#21908-9)</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <value value="STAGSER"/>
+  </identifier>
+  <identifier>
+    <use value="usual"/>
+    <value value="CASESER"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="154.1"/>
+      <display value="PBICD9"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="C20.9"/>
+      <display value="PBICD3T"/>
+    </coding>
+  </code>
+  <bodySite>
+    <coding>
+      <system value="https://www.vghtpe.gov.tw/Index.action"/>
+      <code value="100010"/>
+      <display value="COLON,SPLEEN"/>
+    </coding>
+  </bodySite>
+  <subject>
+    <reference value="Patient"/>
+  </subject>
+  <recordedDate value="2013-01-31"/>
+  <recorder>
+    <reference value="Practitioner"/>
+  </recorder>
+  <stage>
+    <summary>
+      <coding>
+        <system value="https://www.vghtpe.gov.tw/Index.action"/>
+        <code value="2"/>
+        <display value="CLCALT"/>
+      </coding>
+    </summary>
+    <assessment>
+      <reference value="Observation"/>
+    </assessment>
+    <type>
+      <coding>
+        <system value="https://loinc.org/"/>
+        <code value="21908-9"/>
+        <display value="Stage group.clinical Cancer"/>
+      </coding>
+    </type>
+  </stage>
+</Condition>

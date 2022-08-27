@@ -7,18 +7,18 @@
     "name": "CancerIG"
   },
   {
+    "id": "CISISTAG-profile-Example",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/CISISTAG-profile-Example",
+    "version": "0.1.0",
+    "name": "CISISTAGConditionProfile"
+  },
+  {
     "id": "Condition-profile",
     "type": "StructureDefinition",
     "url": "http://example.org/StructureDefinition/Condition-profile",
     "version": "0.1.0",
     "name": "ConditionProfile"
-  },
-  {
-    "id": "Condition-profile-Example",
-    "type": "StructureDefinition",
-    "url": "http://example.org/StructureDefinition/Condition-profile-Example",
-    "version": "0.1.0",
-    "name": "CISISTAGConditionProfile"
   },
   {
     "id": "patient-profile",
@@ -61,5 +61,19 @@
     "url": "https://example.org/fhir/StructureDefinition/MyObservation",
     "version": "0.1.0",
     "name": "ObservationProfile"
+  },
+  {
+    "id": "Procedure-operation",
+    "type": "StructureDefinition",
+    "url": "https://example.org/fhir/StructureDefinition/MyProcedure",
+    "version": "0.1.0",
+    "name": "ProcedureOperation"
+  },
+  {
+    "id": "Procedure-RT",
+    "type": "StructureDefinition",
+    "url": "https://example.org/fhir/StructureDefinition/MyProcedure",
+    "version": "0.1.0",
+    "name": "ProcedureRT"
   }
 ]

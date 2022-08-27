@@ -10,7 +10,7 @@
   <name value="CancerIG"/>
   <title value="台北榮民總醫院-治療計畫書實作指引(VGH-IG)"/>
   <status value="draft"/>
-  <date value="2022-08-07T11:52:30+08:00"/>
+  <date value="2022-08-27T12:17:33+08:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -209,10 +209,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Condition-profile-Example"/>
+        <reference value="StructureDefinition/CISISTAG-profile-Example"/>
       </reference>
       <name value="Condition Profile(CISISTAG)"/>
-      <description value="Example of a profile of Condition(CISISTAG)"/>
+      <description value="Example of a profile of Condition(CISISTAG)癌病病患原始期別"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -223,7 +223,7 @@
         <reference value="StructureDefinition/Condition-profile"/>
       </reference>
       <name value="Condition Profile(CISCTCAE)"/>
-      <description value="Example of a profile of Condition(CISCTCAE)"/>
+      <description value="Example of a profile of Condition(CISCTCAE)副作用併發症記錄表"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -267,7 +267,7 @@
         <reference value="StructureDefinition/MyObservation"/>
       </reference>
       <name value="Observation(CISSSF)"/>
-      <description value="Example of a profile of Observation(CISSSF)"/>
+      <description value="Example of a profile of Observation(CISSSF)重要預後因子"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -278,7 +278,7 @@
         <reference value="StructureDefinition/Observation-profile"/>
       </reference>
       <name value="Observation Profile(CISISTAG)"/>
-      <description value="Example of a profile of Observation(CISISTAG)"/>
+      <description value="Example of a profile of Observation(CISISTAG)癌病病患原始期別"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -294,13 +294,36 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Procedure-operation"/>
+      </reference>
+      <name value="Procedure Profile(CISISTAG)"/>
+      <description value="Example of a profile of Procedure(CISTSUG)預計手術記錄"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Procedure-RT"/>
+      </reference>
+      <name value="Procedure Profile(CISTRT)"/>
+      <description value="Example of a profile of Procedure(CISTRT)預計放射治療記錄"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/CISISTAGExample"/>
+        <reference value="Condition/CISISTAG-profile-Example"/>
       </reference>
-      <name value="CISISTAGExample"/>
-      <exampleCanonical value="http://example.org/StructureDefinition/Condition-profile-Example"/>
+      <name value="CISISTAG-profile-Example"/>
+      <description value="CISISTAG-癌病病患原始期別"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/CISISTAG-profile-Example"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

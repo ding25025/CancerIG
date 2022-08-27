@@ -1,42 +1,44 @@
 ﻿CancerIG : Validation Results
 =========================================
 
-err = 4, warn = 10, info = 3
+err = 4, warn = 11, info = 4
 IG Publisher Version: 1.1.121 Out of date - current version is 1.1.128
-Generated Sun Aug 07 11:53:19 CST 2022. FHIR version 4.0.1 for fhir.Cancer#0.1.0 (canonical = http://example.org)
- Build Errors : 3 / 2 / 0
+Generated Sat Aug 27 12:18:17 CST 2022. FHIR version 4.0.1 for fhir.Cancer#0.1.0 (canonical = http://example.org)
+ Build Errors : 4 / 1 / 0
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/ImplementationGuide-fhir.Cancer : 0 / 0 / 1
- /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/condition-CISISTAGExample : 3 / 2 / 4
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/condition-CISISTAG-profile-Example : 3 / 2 / 4
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/patient-PatientExample : 0 / 0 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-CISISTAG-profile-Example : 0 / 0 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Condition-profile : 0 / 1 / 1
- /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Condition-profile-Example : 0 / 0 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Medication : 0 / 1 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-MedicationAdministration : 0 / 1 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-MedicationRequest : 1 / 1 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-MyObservation : 0 / 1 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Observation-profile : 0 / 1 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Procedure-RT : 0 / 1 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Procedure-operation : 0 / 1 / 2
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-patient-profile : 0 / 0 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/CISISTAGExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PatientExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /Users/yuting/Documents/GitHub/CancerIG/output/Condition-CISISTAGExample.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 952: The link 'Patient' for "Patient" cannot be resolved
-ERROR: /Users/yuting/Documents/GitHub/CancerIG/output/Condition-CISISTAGExample.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 1063: The link 'Practitioner' for "Practitioner" cannot be resolved
-ERROR: /Users/yuting/Documents/GitHub/CancerIG/output/Condition-CISISTAGExample.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 178, column 1397: The link 'Observation' for "Observation" cannot be resolved
+ERROR: /Users/yuting/Documents/GitHub/CancerIG/output/Condition-CISISTAG-profile-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 960: The link 'Patient' for "Patient" cannot be resolved
+ERROR: /Users/yuting/Documents/GitHub/CancerIG/output/Condition-CISISTAG-profile-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 1071: The link 'Practitioner' for "Practitioner" cannot be resolved
+ERROR: /Users/yuting/Documents/GitHub/CancerIG/output/Condition-CISISTAG-profile-Example.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 178, column 1405: The link 'Observation' for "Observation" cannot be resolved
+ERROR: /Users/yuting/Documents/GitHub/CancerIG/output/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 203, column 37: The link 'ding25025@gmail.com' for "ding25025@gmail.com" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-fhir.Cancer.json ==
-== fsh-generated/resources/Condition-CISISTAGExample.json ==
-WARNING: Condition/CISISTAGExample: Condition.code.coding[0]: Error from server: Found content (".") after end of expression at character 4
-WARNING: Condition/CISISTAGExample: Condition.code.coding[1]: Error from server: Concept not found (next char = "C", in "C20.9") at character 1
-INFORMATION: Condition/CISISTAGExample: Condition.bodySite[0].coding[0]: Code System URI 'https://www.vghtpe.gov.tw/Index.action' is unknown so the code cannot be validated
-ERROR: Condition/CISISTAGExample: Condition.subject: Unable to resolve resource with reference 'Patient'
-ERROR: Condition/CISISTAGExample: Condition.recorder: Unable to resolve resource with reference 'Practitioner'
-INFORMATION: Condition/CISISTAGExample: Condition.stage[0].summary.coding[0]: Code System URI 'https://www.vghtpe.gov.tw/Index.action' is unknown so the code cannot be validated
-ERROR: Condition/CISISTAGExample: Condition.stage[0].assessment[0]: Unable to resolve resource with reference 'Observation'
-INFORMATION: Condition/CISISTAGExample: Condition.stage[0].type.coding[0]: Code System URI 'https://loinc.org/' is unknown so the code cannot be validated
+== fsh-generated/resources/Condition-CISISTAG-profile-Example.json ==
+WARNING: Condition/CISISTAG-profile-Example: Condition.code.coding[0]: Error from server: Found content (".") after end of expression at character 4
+WARNING: Condition/CISISTAG-profile-Example: Condition.code.coding[1]: Error from server: Concept not found (next char = "C", in "C20.9") at character 1
+INFORMATION: Condition/CISISTAG-profile-Example: Condition.bodySite[0].coding[0]: Code System URI 'https://www.vghtpe.gov.tw/Index.action' is unknown so the code cannot be validated
+ERROR: Condition/CISISTAG-profile-Example: Condition.subject: Unable to resolve resource with reference 'Patient'
+ERROR: Condition/CISISTAG-profile-Example: Condition.recorder: Unable to resolve resource with reference 'Practitioner'
+INFORMATION: Condition/CISISTAG-profile-Example: Condition.stage[0].summary.coding[0]: Code System URI 'https://www.vghtpe.gov.tw/Index.action' is unknown so the code cannot be validated
+ERROR: Condition/CISISTAG-profile-Example: Condition.stage[0].assessment[0]: Unable to resolve resource with reference 'Observation'
+INFORMATION: Condition/CISISTAG-profile-Example: Condition.stage[0].type.coding[0]: Code System URI 'https://loinc.org/' is unknown so the code cannot be validated
 == fsh-generated/resources/Patient-PatientExample.json ==
+== fsh-generated/resources/StructureDefinition-CISISTAG-profile-Example.json ==
 == fsh-generated/resources/StructureDefinition-Condition-profile.json ==
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/Condition-profile'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-Condition-profile-Example.json ==
 == fsh-generated/resources/StructureDefinition-Medication.json ==
 WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MITW-Medication'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-MedicationAdministration.json ==
@@ -48,4 +50,9 @@ WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefi
 WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MyObservation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-Observation-profile.json ==
 WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MyObservation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Procedure-RT.json ==
+WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MyProcedure'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Procedure-operation.json ==
+INFORMATION: StructureDefinition/Procedure-operation: StructureDefinition.snapshot.element[39].fixed.ofType(CodeableConcept): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users) 
+WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MyProcedure'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-patient-profile.json ==

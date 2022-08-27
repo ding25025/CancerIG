@@ -10,7 +10,7 @@
   "name": "CancerIG",
   "title": "台北榮民總醫院-治療計畫書實作指引(VGH-IG)",
   "status": "draft",
-  "date": "2022-08-07T11:52:30+08:00",
+  "date": "2022-08-27T12:17:33+08:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -334,10 +334,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/Condition-profile-Example"
+          "reference": "StructureDefinition/CISISTAG-profile-Example"
         },
         "name": "Condition Profile(CISISTAG)",
-        "description": "Example of a profile of Condition(CISISTAG)",
+        "description": "Example of a profile of Condition(CISISTAG)癌病病患原始期別",
         "exampleBoolean": false
       },
       {
@@ -351,7 +351,7 @@
           "reference": "StructureDefinition/Condition-profile"
         },
         "name": "Condition Profile(CISCTCAE)",
-        "description": "Example of a profile of Condition(CISCTCAE)",
+        "description": "Example of a profile of Condition(CISCTCAE)副作用併發症記錄表",
         "exampleBoolean": false
       },
       {
@@ -407,7 +407,7 @@
           "reference": "StructureDefinition/MyObservation"
         },
         "name": "Observation(CISSSF)",
-        "description": "Example of a profile of Observation(CISSSF)",
+        "description": "Example of a profile of Observation(CISSSF)重要預後因子",
         "exampleBoolean": false
       },
       {
@@ -421,7 +421,7 @@
           "reference": "StructureDefinition/Observation-profile"
         },
         "name": "Observation Profile(CISISTAG)",
-        "description": "Example of a profile of Observation(CISISTAG)",
+        "description": "Example of a profile of Observation(CISISTAG)癌病病患原始期別",
         "exampleBoolean": false
       },
       {
@@ -442,14 +442,43 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Procedure-operation"
+        },
+        "name": "Procedure Profile(CISISTAG)",
+        "description": "Example of a profile of Procedure(CISTSUG)預計手術記錄",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Procedure-RT"
+        },
+        "name": "Procedure Profile(CISTRT)",
+        "description": "Example of a profile of Procedure(CISTRT)預計放射治療記錄",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Condition"
           }
         ],
         "reference": {
-          "reference": "Condition/CISISTAGExample"
+          "reference": "Condition/CISISTAG-profile-Example"
         },
-        "name": "CISISTAGExample",
-        "exampleCanonical": "http://example.org/StructureDefinition/Condition-profile-Example"
+        "name": "CISISTAG-profile-Example",
+        "description": "CISISTAG-癌病病患原始期別",
+        "exampleCanonical": "http://example.org/StructureDefinition/CISISTAG-profile-Example"
       },
       {
         "extension": [

@@ -2,7 +2,7 @@ Profile: MyObservation
 Parent: Observation
 Id: MyObservation
 Title:       "Observation(CISSSF)"
-Description: "Example of a profile of Observation(CISSSF)"
+Description: "Example of a profile of Observation(CISSSF)重要預後因子"
 
 * ^url = "https://example.org/fhir/StructureDefinition/MyObservation"
 * ^status = #draft

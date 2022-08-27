@@ -1,8 +1,8 @@
 Profile:     CISISTAGConditionProfile 
-Id:          Condition-profile-Example
+Id:          CISISTAG-profile-Example
 Parent:      Condition
 Title:       "Condition Profile(CISISTAG)"
-Description: "Example of a profile of Condition(CISISTAG)"
+Description: "Example of a profile of Condition(CISISTAG)癌病病患原始期別"
 
 * identifier 1.. MS
 * identifier.use 1..
@@ -55,8 +55,9 @@ Description: "Example of a profile of Condition(CISISTAG)"
 * stage.type.coding.display = "Stage group.clinical Cancer" 
 
 
-Instance: CISISTAGExample 
-InstanceOf: CISISTAGConditionProfile 
+Instance: CISISTAG-profile-Example
+InstanceOf: CISISTAG-profile-Example
+Description: "CISISTAG-癌病病患原始期別"
 
 * identifier[0].use = #official
 * identifier[0].value = "STAGSER"

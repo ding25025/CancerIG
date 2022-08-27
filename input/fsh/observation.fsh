@@ -2,7 +2,7 @@ Profile:     ObservationProfile
 Id:          Observation-profile
 Parent:      Observation
 Title:       "Observation Profile(CISISTAG)"
-Description: "Example of a profile of Observation(CISISTAG)"
+Description: "Example of a profile of Observation(CISISTAG)癌病病患原始期別"
 
 // ----- Begin rules:
 

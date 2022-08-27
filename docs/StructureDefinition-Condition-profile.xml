@@ -48,7 +48,7 @@
   <name value="ConditionProfile"/>
   <title value="Condition Profile(CISCTCAE)"/>
   <status value="draft"/>
-  <date value="2022-08-07T11:52:30+08:00"/>
+  <date value="2022-08-27T12:17:33+08:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -57,7 +57,7 @@
       <value value="http://example.org/example-publisher"/>
     </telecom>
   </contact>
-  <description value="Example of a profile of Condition(CISCTCAE)"/>
+  <description value="Example of a profile of Condition(CISCTCAE)副作用併發症記錄表"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>

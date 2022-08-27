@@ -2,7 +2,7 @@ Profile:     ConditionProfile
 Id:          Condition-profile
 Parent:      Condition
 Title:       "Condition Profile(CISCTCAE)"
-Description: "Example of a profile of Condition(CISCTCAE)"
+Description: "Example of a profile of Condition(CISCTCAE)副作用併發症記錄表"
 
 // ----- Begin rules:
 * ^status = #draft

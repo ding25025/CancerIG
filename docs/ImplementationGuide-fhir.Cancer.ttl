@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CancerIG"];
   fhir:ImplementationGuide.title [ fhir:value "台北榮民總醫院-治療計畫書實作指引(VGH-IG)"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-08-07T11:52:30+08:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-08-27T12:17:33+08:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Example Publisher"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -318,11 +318,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/StructureDefinition/Condition-profile-Example>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Condition-profile-Example" ]
+         fhir:link <http://example.org/StructureDefinition/CISISTAG-profile-Example>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CISISTAG-profile-Example" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition Profile(CISISTAG)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Condition(CISISTAG)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Condition(CISISTAG)癌病病患原始期別" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -336,7 +336,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Condition-profile" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition Profile(CISCTCAE)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Condition(CISCTCAE)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Condition(CISCTCAE)副作用併發症記錄表" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
@@ -392,7 +392,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/MyObservation" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation(CISSSF)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Observation(CISSSF)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Observation(CISSSF)重要預後因子" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 6;
@@ -406,7 +406,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Observation-profile" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation Profile(CISISTAG)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Observation(CISISTAG)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Observation(CISISTAG)癌病病患原始期別" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 7;
@@ -427,19 +427,48 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/StructureDefinition/Procedure-operation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Procedure-operation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedure Profile(CISISTAG)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Procedure(CISTSUG)預計手術記錄" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/StructureDefinition/Procedure-RT>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Procedure-RT" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedure Profile(CISTRT)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Procedure(CISTRT)預計放射治療記錄" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Condition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/Condition/CISISTAGExample>;
-         fhir:Reference.reference [ fhir:value "Condition/CISISTAGExample" ]
+         fhir:link <http://example.org/Condition/CISISTAG-profile-Example>;
+         fhir:Reference.reference [ fhir:value "Condition/CISISTAG-profile-Example" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CISISTAGExample" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CISISTAG-profile-Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CISISTAG-癌病病患原始期別" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://example.org/StructureDefinition/Condition-profile-Example";
-         fhir:link <http://example.org/StructureDefinition/Condition-profile-Example>
+         fhir:value "http://example.org/StructureDefinition/CISISTAG-profile-Example";
+         fhir:link <http://example.org/StructureDefinition/CISISTAG-profile-Example>
        ]
      ], [
-       fhir:index 9;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

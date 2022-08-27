@@ -20,7 +20,7 @@
   "name": "ObservationProfile",
   "title": "Observation Profile(CISISTAG)",
   "status": "draft",
-  "date": "2022-08-07T11:52:30+08:00",
+  "date": "2022-08-27T12:17:33+08:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -33,7 +33,7 @@
       ]
     }
   ],
-  "description": "Example of a profile of Observation(CISISTAG)",
+  "description": "Example of a profile of Observation(CISISTAG)癌病病患原始期別",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

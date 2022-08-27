@@ -6,12 +6,12 @@
   "profiles": {
     "Condition": [
       {
-        "url": "http://example.org/StructureDefinition/Condition-profile",
-        "title": "Condition Profile(CISCTCAE)"
+        "url": "http://example.org/StructureDefinition/CISISTAG-profile-Example",
+        "title": "Condition Profile(CISISTAG)"
       },
       {
-        "url": "http://example.org/StructureDefinition/Condition-profile-Example",
-        "title": "Condition Profile(CISISTAG)"
+        "url": "http://example.org/StructureDefinition/Condition-profile",
+        "title": "Condition Profile(CISCTCAE)"
       }
     ],
     "Patient": [
@@ -46,6 +46,16 @@
       {
         "url": "https://example.org/fhir/StructureDefinition/MyObservation",
         "title": "Observation Profile(CISISTAG)"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "https://example.org/fhir/StructureDefinition/MyProcedure",
+        "title": "Procedure Profile(CISISTAG)"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/MyProcedure",
+        "title": "Procedure Profile(CISTRT)"
       }
     ]
   },

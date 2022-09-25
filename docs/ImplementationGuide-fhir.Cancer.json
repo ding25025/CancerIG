@@ -10,7 +10,7 @@
   "name": "CancerIG",
   "title": "台北榮民總醫院-治療計畫書實作指引(VGH-IG)",
   "status": "draft",
-  "date": "2022-08-27T19:57:01+08:00",
+  "date": "2022-09-25T15:07:05+08:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -33,7 +33,7 @@
       "id": "hl7tx",
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
-      "version": "3.1.0"
+      "version": "4.0.0"
     }
   ],
   "definition": {
@@ -348,10 +348,38 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/CarePlanProfile"
+        },
+        "name": "Careplan Profile(CISCTP)",
+        "description": "Example of a profile of CarePlan(CISCTP)治療計畫書",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/Condition-profile"
         },
         "name": "Condition Profile(CISCTCAE)",
         "description": "Example of a profile of Condition(CISCTCAE)副作用併發症記錄表",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/GoalProfile"
+        },
+        "name": "Goal Profile(CISCTP)",
+        "description": "Example of a profile of Goal(CISCTP)治療計畫書",
         "exampleBoolean": false
       },
       {
@@ -446,10 +474,38 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/Procedure-operation"
+          "reference": "StructureDefinition/ProcedureChemo"
+        },
+        "name": "Procedure Profile(CISTST)",
+        "description": "Example of a profile of Procedure(CISTST)預計化學記錄",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProcedureOperation"
         },
         "name": "Procedure Profile(CISISTAG)",
         "description": "Example of a profile of Procedure(CISTSUG)預計手術記錄",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProcedureOther"
+        },
+        "name": "Procedure Profile(CISTOT)",
+        "description": "Example of a profile of Procedure(CISTOT)預計其他記錄",
         "exampleBoolean": false
       },
       {

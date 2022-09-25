@@ -27,7 +27,7 @@ Description: "Example of a profile of MedicationRequest"
 * dosageInstruction.timing.code 1..
 * dosageInstruction.timing.code.coding 1..
 * dosageInstruction.timing.code.coding.system 1..
-* dosageInstruction.timing.code.coding.system = "http://hl7.org/fhir/ValueSet/timing-abbreviation" (exactly)
+* dosageInstruction.timing.code.coding.system = "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation" (exactly)
 * dosageInstruction.timing.code.coding.code 1..
 * dosageInstruction.timing.code.coding.display 1..
 * dosageInstruction.route 1..

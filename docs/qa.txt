@@ -1,22 +1,26 @@
 ﻿CancerIG : Validation Results
 =========================================
 
-err = 4, warn = 11, info = 4
-IG Publisher Version: 1.1.121 Out of date - current version is 1.1.128
-Generated Sat Aug 27 19:57:59 CST 2022. FHIR version 4.0.1 for fhir.Cancer#0.1.0 (canonical = http://example.org)
+err = 15, warn = 15, info = 8
+IG Publisher Version: 1.1.121 Out of date - current version is 1.2.3
+Generated Sun Sep 25 15:08:06 CST 2022. FHIR version 4.0.1 for fhir.Cancer#0.1.0 (canonical = http://example.org)
  Build Errors : 4 / 1 / 0
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/ImplementationGuide-fhir.Cancer : 0 / 0 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/condition-CISISTAG-profile-Example : 3 / 2 / 4
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/patient-PatientExample : 0 / 0 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-CISISTAG-profile-Example : 0 / 0 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-CarePlanProfile : 1 / 1 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Condition-profile : 0 / 1 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-GoalProfile : 0 / 1 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Medication : 0 / 1 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-MedicationAdministration : 0 / 1 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-MedicationRequest : 1 / 1 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-MyObservation : 0 / 1 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Observation-profile : 0 / 1 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Procedure-RT : 0 / 1 / 1
- /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Procedure-operation : 0 / 1 / 2
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-ProcedureChemo : 6 / 1 / 3
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-ProcedureOperation : 0 / 1 / 2
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-ProcedureOther : 4 / 1 / 3
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-patient-profile : 0 / 0 / 1
 </table>
 == n/a ==
@@ -37,8 +41,13 @@ ERROR: Condition/CISISTAG-profile-Example: Condition.stage[0].assessment[0]: Una
 INFORMATION: Condition/CISISTAG-profile-Example: Condition.stage[0].type.coding[0]: Code System URI 'https://loinc.org/' is unknown so the code cannot be validated
 == fsh-generated/resources/Patient-PatientExample.json ==
 == fsh-generated/resources/StructureDefinition-CISISTAG-profile-Example.json ==
+== fsh-generated/resources/StructureDefinition-CarePlanProfile.json ==
+ERROR: StructureDefinition/CarePlanProfile: StructureDefinition.differential.element[4].code[0]: Coding.system must be an absolute reference, not a local reference
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/CarePlanProfile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-Condition-profile.json ==
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/Condition-profile'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-GoalProfile.json ==
+WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MyGoal'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-Medication.json ==
 WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MITW-Medication'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-MedicationAdministration.json ==
@@ -52,7 +61,25 @@ WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefi
 WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MyObservation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-Procedure-RT.json ==
 WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MyProcedure'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-Procedure-operation.json ==
-INFORMATION: StructureDefinition/Procedure-operation: StructureDefinition.snapshot.element[39].fixed.ofType(CodeableConcept): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users) 
+== fsh-generated/resources/StructureDefinition-ProcedureChemo.json ==
+ERROR: StructureDefinition/ProcedureChemo: StructureDefinition.snapshot.element[12].pattern.ofType(Reference): Unable to resolve resource with reference 'CarePlan'
+ERROR: StructureDefinition/ProcedureChemo: StructureDefinition.snapshot.element[29].pattern.ofType(Reference): Unable to resolve resource with reference 'Patient'
+ERROR: StructureDefinition/ProcedureChemo: StructureDefinition.snapshot.element[39].pattern.ofType(Reference): Unable to resolve resource with reference 'Practitioner'
+ERROR: StructureDefinition/ProcedureChemo: StructureDefinition.differential.element[2].pattern.ofType(Reference): Unable to resolve resource with reference 'CarePlan'
+ERROR: StructureDefinition/ProcedureChemo: StructureDefinition.differential.element[8].pattern.ofType(Reference): Unable to resolve resource with reference 'Patient'
+ERROR: StructureDefinition/ProcedureChemo: StructureDefinition.differential.element[9].pattern.ofType(Reference): Unable to resolve resource with reference 'Practitioner'
+INFORMATION: StructureDefinition/ProcedureChemo: StructureDefinition.snapshot.element[12].pattern.ofType(Reference): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+INFORMATION: StructureDefinition/ProcedureChemo: StructureDefinition.snapshot.element[50].fixed.ofType(CodeableConcept): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users) 
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/ProcedureChemo'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ProcedureOperation.json ==
+INFORMATION: StructureDefinition/ProcedureOperation: StructureDefinition.snapshot.element[39].fixed.ofType(CodeableConcept): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users) 
 WARNING: StructureDefinition.where(url = 'https://example.org/fhir/StructureDefinition/MyProcedure'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ProcedureOther.json ==
+ERROR: StructureDefinition/ProcedureOther: StructureDefinition.snapshot.element[12].pattern.ofType(Reference): Unable to resolve resource with reference 'CarePlan'
+ERROR: StructureDefinition/ProcedureOther: StructureDefinition.snapshot.element[18].pattern.ofType(Reference): Unable to resolve resource with reference 'Patient'
+ERROR: StructureDefinition/ProcedureOther: StructureDefinition.differential.element[2].pattern.ofType(Reference): Unable to resolve resource with reference 'CarePlan'
+ERROR: StructureDefinition/ProcedureOther: StructureDefinition.differential.element[6].pattern.ofType(Reference): Unable to resolve resource with reference 'Patient'
+INFORMATION: StructureDefinition/ProcedureOther: StructureDefinition.snapshot.element[12].pattern.ofType(Reference): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+INFORMATION: StructureDefinition/ProcedureOther: StructureDefinition.snapshot.element[33].fixed.ofType(CodeableConcept): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users) 
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/ProcedureOther'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-patient-profile.json ==

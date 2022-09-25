@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CancerIG"];
   fhir:ImplementationGuide.title [ fhir:value "台北榮民總醫院-治療計畫書實作指引(VGH-IG)"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-08-27T19:57:01+08:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-09-25T15:07:05+08:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Example Publisher"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -42,7 +42,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "4.0.0" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -332,6 +332,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/StructureDefinition/CarePlanProfile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CarePlanProfile" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Careplan Profile(CISCTP)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of CarePlan(CISCTP)治療計畫書" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://example.org/StructureDefinition/Condition-profile>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Condition-profile" ]
        ];
@@ -339,7 +353,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Condition(CISCTCAE)副作用併發症記錄表" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/StructureDefinition/GoalProfile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/GoalProfile" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Goal Profile(CISCTP)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Goal(CISCTP)治療計畫書" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -353,7 +381,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Medication" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -367,7 +395,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of MedicationAdministration" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -381,7 +409,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of MedicationRequest" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -395,7 +423,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Observation(CISSSF)重要預後因子" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -409,7 +437,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Observation(CISISTAG)癌病病患原始期別" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -423,21 +451,49 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/StructureDefinition/Procedure-operation>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Procedure-operation" ]
+         fhir:link <http://example.org/StructureDefinition/ProcedureChemo>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ProcedureChemo" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedure Profile(CISTST)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Procedure(CISTST)預計化學記錄" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/StructureDefinition/ProcedureOperation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ProcedureOperation" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedure Profile(CISISTAG)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Procedure(CISTSUG)預計手術記錄" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/StructureDefinition/ProcedureOther>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ProcedureOther" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedure Profile(CISTOT)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Procedure(CISTOT)預計其他記錄" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -451,7 +507,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a profile of Procedure(CISTRT)預計放射治療記錄" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -468,7 +524,7 @@
          fhir:link <http://example.org/StructureDefinition/CISISTAG-profile-Example>
        ]
      ], [
-       fhir:index 11;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

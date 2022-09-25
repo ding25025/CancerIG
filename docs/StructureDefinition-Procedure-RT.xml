@@ -32,7 +32,7 @@ RTDRID 主責醫師姓名">display</a><a name="Procedure.performer.actor.display
   <name value="ProcedureRT"/>
   <title value="Procedure Profile(CISTRT)"/>
   <status value="draft"/>
-  <date value="2022-08-27T19:57:01+08:00"/>
+  <date value="2022-09-25T15:07:05+08:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>

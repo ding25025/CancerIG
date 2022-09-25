@@ -14,11 +14,32 @@
     "name": "CISISTAGConditionProfile"
   },
   {
+    "id": "CarePlanProfile",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/CarePlanProfile",
+    "version": "0.1.0",
+    "name": "CarePlanProfile"
+  },
+  {
     "id": "Condition-profile",
     "type": "StructureDefinition",
     "url": "http://example.org/StructureDefinition/Condition-profile",
     "version": "0.1.0",
     "name": "ConditionProfile"
+  },
+  {
+    "id": "ProcedureChemo",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/ProcedureChemo",
+    "version": "0.1.0",
+    "name": "ProcedureChemo"
+  },
+  {
+    "id": "ProcedureOther",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/ProcedureOther",
+    "version": "0.1.0",
+    "name": "ProcedureOther"
   },
   {
     "id": "patient-profile",
@@ -49,6 +70,13 @@
     "name": "MedicationRequest"
   },
   {
+    "id": "GoalProfile",
+    "type": "StructureDefinition",
+    "url": "https://example.org/fhir/StructureDefinition/MyGoal",
+    "version": "0.1.0",
+    "name": "GoalProfile"
+  },
+  {
     "id": "MyObservation",
     "type": "StructureDefinition",
     "url": "https://example.org/fhir/StructureDefinition/MyObservation",
@@ -63,7 +91,7 @@
     "name": "ObservationProfile"
   },
   {
-    "id": "Procedure-operation",
+    "id": "ProcedureOperation",
     "type": "StructureDefinition",
     "url": "https://example.org/fhir/StructureDefinition/MyProcedure",
     "version": "0.1.0",

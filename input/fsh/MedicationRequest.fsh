@@ -27,19 +27,19 @@ Description: "Example of a profile of MedicationRequest"
 * dosageInstruction.timing.code 1..
 * dosageInstruction.timing.code.coding 1..
 * dosageInstruction.timing.code.coding.system 1..
-* dosageInstruction.timing.code.coding.system = "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation" (exactly)
+* dosageInstruction.timing.code.coding.system = "http://hitstdio.ntunhs.edu.tw/ig/twcore/ValueSet-medication-frequency-tw.html" (exactly)
 * dosageInstruction.timing.code.coding.code 1..
 * dosageInstruction.timing.code.coding.display 1..
-* dosageInstruction.route 1..
+* dosageInstruction.route 0..1
 * dosageInstruction.route.coding 1..
 * dosageInstruction.route.coding.system 1..
-* dosageInstruction.route.coding.system = "http://mtrsoftware.com.tw/Page_L/用法表.htm" (exactly)
+* dosageInstruction.route.coding.system = "http://hitstdio.ntunhs.edu.tw/ig/twcore/ValueSet-medication-path-tw.html" (exactly)
 * dosageInstruction.route.coding.code 1..
 * dosageInstruction.route.coding.display 1..
-* dosageInstruction.method 1..
+* dosageInstruction.method 0..
 * dosageInstruction.method.coding 1..
 * dosageInstruction.method.coding.system 1..
-* dosageInstruction.method.coding.system = "http://mtrsoftware.com.tw/Page_L/用法表.htm" (exactly)
+* dosageInstruction.method.coding.system = "http://hitstdio.ntunhs.edu.tw/ig/twcore/ValueSet-medication-path-tw.html" (exactly)
 * dosageInstruction.method.coding.code 1..
 * dosageInstruction.method.coding.display 1..
 * dispenseRequest 1..

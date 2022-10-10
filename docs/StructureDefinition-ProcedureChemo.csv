@@ -60,7 +60,7 @@ Cancelled Reason","",0,1,"","","Y","CodeableConcept {[]} {[]}
 "Procedure.category","Procedure.category","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Classification of the procedure","STMEDTHD 全身療法方法 STOTDESC全身療法其他說明","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://wd.vghtpe.gov.tw""/>
+    <system value=""https://www.vghtpe.gov.tw/Index.action""/>
   </coding>
 </valueCodeableConcept>","","","","",,"example","A code that classifies a procedure for searching, sorting and display purposes.","http://hl7.org/fhir/ValueSet/procedure-category","",,,,"Procedure.category",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=""COMP].target[classCode=""LIST"", moodCode=""EVN""].code","FiveWs.class"
@@ -103,7 +103,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Identification of the procedure","The specific procedure that is performed. Use text if the exact nature of the procedure cannot be coded (e.g. ""Laparoscopic Appendectomy"").","","0..1 to account for primarily narrative only resources.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://wd.vghtpe.gov.tw""/>
+    <system value=""https://www.vghtpe.gov.tw/Index.action""/>
   </coding>
 </valueCodeableConcept>","","","","",,"example","A code to identify a specific procedure .","http://hl7.org/fhir/ValueSet/procedure-code","",,,,"Procedure.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code",".code","FiveWs.what[x]","OBR-44/OBR-45"

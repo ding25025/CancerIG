@@ -20,7 +20,7 @@
   "name": "CarePlanProfile",
   "title": "Careplan Profile(CISCTP)",
   "status": "draft",
-  "date": "2022-09-25T15:07:05+08:00",
+  "date": "2022-10-08T22:29:42+08:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -2875,7 +2875,7 @@
         "path": "CarePlan.category",
         "code": [
           {
-            "system": "\"https://www.vghtpe.gov.tw/Index.action\""
+            "system": "https://www.vghtpe.gov.tw/Index.action\""
           }
         ],
         "definition": "Identifies what \"kind\" of plan this is to support differentiation between multiple co-existing plans; e.g. \"Home health\", \"psychiatric\", \"asthma\", \"disease management\", \"wellness plan\", etc.\n//CTPORDER 療程類別 001新診斷首次療程 002復發療程"

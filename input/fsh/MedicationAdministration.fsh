@@ -14,13 +14,13 @@ Description: "Example of a profile of MedicationAdministration"
 * dosage.route 1..
 * dosage.route.coding 1..
 * dosage.route.coding.system 1..
-* dosage.route.coding.system = "http://mtrsoftware.com.tw/Page_L/用法表.htm" (exactly)
+* dosage.route.coding.system = "http://hitstdio.ntunhs.edu.tw/ig/twcore/ValueSet-medication-path-tw.html" (exactly)
 * dosage.route.coding.code 1..
 * dosage.route.coding.display 1..
-* dosage.method 1..
+* dosage.method 0..1
 * dosage.method.coding 1..
 * dosage.method.coding.system 1..
-* dosage.method.coding.system = "http://mtrsoftware.com.tw/Page_L/用法表.htm" (exactly)
+* dosage.method.coding.system = "http://hitstdio.ntunhs.edu.tw/ig/twcore/ValueSet-medication-path-tw.html" (exactly)
 * dosage.method.coding.code 1..
 * dosage.method.coding.display 1..
 * dosage.dose 1..

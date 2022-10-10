@@ -39,7 +39,7 @@ CTPTSTP 執行狀態">status</a><a name="CarePlan.status"> </a></td><td style="v
   <name value="CarePlanProfile"/>
   <title value="Careplan Profile(CISCTP)"/>
   <status value="draft"/>
-  <date value="2022-09-25T15:07:05+08:00"/>
+  <date value="2022-10-08T22:29:42+08:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -2349,7 +2349,7 @@ CTPTSTP 執行狀態">status</a><a name="CarePlan.status"> </a></td><td style="v
     <element id="CarePlan.category">
       <path value="CarePlan.category"/>
       <code>
-        <system value="&quot;https://www.vghtpe.gov.tw/Index.action&quot;"/>
+        <system value="https://www.vghtpe.gov.tw/Index.action&quot;"/>
       </code>
       <definition value="Identifies what &quot;kind&quot; of plan this is to support differentiation between multiple co-existing plans; e.g. &quot;Home health&quot;, &quot;psychiatric&quot;, &quot;asthma&quot;, &quot;disease management&quot;, &quot;wellness plan&quot;, etc.&#xA;//CTPORDER 療程類別 001新診斷首次療程 002復發療程"/>
     </element>

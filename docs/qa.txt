@@ -1,15 +1,15 @@
 ﻿CancerIG : Validation Results
 =========================================
 
-err = 15, warn = 15, info = 8
-IG Publisher Version: 1.1.121 Out of date - current version is 1.2.3
-Generated Sun Sep 25 15:08:06 CST 2022. FHIR version 4.0.1 for fhir.Cancer#0.1.0 (canonical = http://example.org)
+err = 14, warn = 15, info = 8
+IG Publisher Version: 1.1.121 Out of date - current version is 1.2.5
+Generated Sat Oct 08 22:30:37 CST 2022. FHIR version 4.0.1 for fhir.Cancer#0.1.0 (canonical = http://example.org)
  Build Errors : 4 / 1 / 0
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/ImplementationGuide-fhir.Cancer : 0 / 0 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/condition-CISISTAG-profile-Example : 3 / 2 / 4
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/patient-PatientExample : 0 / 0 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-CISISTAG-profile-Example : 0 / 0 / 1
- /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-CarePlanProfile : 1 / 1 / 1
+ /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-CarePlanProfile : 0 / 1 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Condition-profile : 0 / 1 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-GoalProfile : 0 / 1 / 1
  /Users/yuting/Documents/GitHub/CancerIG/fsh-generated/resources/structuredefinition-Medication : 0 / 1 / 1
@@ -42,7 +42,6 @@ INFORMATION: Condition/CISISTAG-profile-Example: Condition.stage[0].type.coding[
 == fsh-generated/resources/Patient-PatientExample.json ==
 == fsh-generated/resources/StructureDefinition-CISISTAG-profile-Example.json ==
 == fsh-generated/resources/StructureDefinition-CarePlanProfile.json ==
-ERROR: StructureDefinition/CarePlanProfile: StructureDefinition.differential.element[4].code[0]: Coding.system must be an absolute reference, not a local reference
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/CarePlanProfile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-Condition-profile.json ==
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/Condition-profile'): The Implementation Guide contains no examples for this profile

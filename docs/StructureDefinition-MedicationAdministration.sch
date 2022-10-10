@@ -197,7 +197,6 @@
     <sch:rule context="f:MedicationAdministration/f:dosage">
       <sch:assert test="count(f:text) &gt;= 1">text: minimum cardinality of 'text' is 1</sch:assert>
       <sch:assert test="count(f:route) &gt;= 1">route: minimum cardinality of 'route' is 1</sch:assert>
-      <sch:assert test="count(f:method) &gt;= 1">method: minimum cardinality of 'method' is 1</sch:assert>
       <sch:assert test="count(f:dose) &gt;= 1">dose: minimum cardinality of 'dose' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

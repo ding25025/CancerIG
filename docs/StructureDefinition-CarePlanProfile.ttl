@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "CarePlanProfile"];
   fhir:StructureDefinition.title [ fhir:value "Careplan Profile(CISCTP)"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-09-25T15:07:05+08:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-08T22:29:42+08:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Example Publisher"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -3139,7 +3139,7 @@
        fhir:ElementDefinition.path [ fhir:value "CarePlan.category" ];
        fhir:ElementDefinition.code [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "\"https://www.vghtpe.gov.tw/Index.action\"" ]
+         fhir:Coding.system [ fhir:value "https://www.vghtpe.gov.tw/Index.action\"" ]
        ];
        fhir:ElementDefinition.definition [ fhir:value "Identifies what \"kind\" of plan this is to support differentiation between multiple co-existing plans; e.g. \"Home health\", \"psychiatric\", \"asthma\", \"disease management\", \"wellness plan\", etc.\n//CTPORDER 療程類別 001新診斷首次療程 002復發療程" ]
      ], [
